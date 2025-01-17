@@ -11,9 +11,9 @@ export default function Home() {
       </div>
       <div className={styles.Subtitles}>
         It&apos;s not just food,
-        <span className={styles.SubtitlesColor}>It&apos;s an experience.</span>
+        <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
       </div>
-      <div className={styles.BannerPicture}>BannerPicture</div>
+      <div className={styles.DivisionSection}>BannerPicture</div>
       <div className={styles.Subtitles}>
         Food We <span className={styles.SubtitlesColor}>Serves</span>
         <div className={styles.DescriptionText}>
@@ -21,7 +21,7 @@ export default function Home() {
           World
         </div>
       </div>
-      <div className={styles.OurFoodSection}>
+      <div className={styles.DivisionSection}>
         <div className={styles.OurFoodSectionIcon}>
           <div className={styles.RoundedImage}></div>Food Type
         </div>
@@ -35,6 +35,11 @@ export default function Home() {
           <div className={styles.RoundedImage}></div>Food Type
         </div>
       </div>
+      <div className={styles.Subtitles}>
+        Dish of the
+        <span className={styles.SubtitlesColor}> Month</span>
+      </div>
+      <div className={styles.DivisionSection}></div>
     </>
   );
 }

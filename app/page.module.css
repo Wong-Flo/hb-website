@@ -17,14 +17,6 @@
   background-color: #ddd;
   color: #cd372d;
 }
-.BannerPicture {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 20rem;
-  background-color: lightgray;
-}
 .Subtitles {
   text-align: center;
   font-size: 1.5rem;
@@ -39,7 +31,7 @@
   font-size: 1rem;
   font-weight: 50;
 }
-.OurFoodSection {
+.DivisionSection {
   width: 100%;
   height: 18rem;
   background-color: lightgrey;
