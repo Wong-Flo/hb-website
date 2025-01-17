@@ -14,7 +14,27 @@ export default function Home() {
         <span className={styles.SubtitlesColor}>It&apos;s an experience.</span>
       </div>
       <div className={styles.BannerPicture}>BannerPicture</div>
-      <div className={styles.Subtitles}>Our Food</div>
+      <div className={styles.Subtitles}>
+        Food We <span className={styles.SubtitlesColor}>Serves</span>
+        <div className={styles.DescriptionText}>
+          We always serve the best and most authentic food dishes all around the
+          World
+        </div>
+      </div>
+      <div className={styles.OurFoodSection}>
+        <div className={styles.OurFoodSectionIcon}>
+          <div className={styles.RoundedImage}></div>Food Type
+        </div>
+        <div className={styles.OurFoodSectionIcon}>
+          <div className={styles.RoundedImage}></div>Food Type
+        </div>
+        <div className={styles.OurFoodSectionIcon}>
+          <div className={styles.RoundedImage}></div>Food Type
+        </div>
+        <div className={styles.OurFoodSectionIcon}>
+          <div className={styles.RoundedImage}></div>Food Type
+        </div>
+      </div>
     </>
   );
 }
