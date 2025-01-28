@@ -1,0 +1,44 @@
+.ContactPage {
+  padding: 2rem;
+}
+
+.OpeningTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.OpeningContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.OpeningTimesTable {
+  width: 45%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.OpeningTimesTable td {
+  padding: 8px 12px;
+}
+
+.OpeningTimesTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.OpeningTimesTable tr:hover {
+  background-color: rgba(205, 55, 45, 0.1);
+}
+
+.OpeningTimesTable td:first-child {
+  font-weight: bold;
+}
+
+.OurLocation {
+  width: 100%;
+  padding-left: 2rem;
+}

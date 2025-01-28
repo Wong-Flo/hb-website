@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.TopNavBar}>
         <Link href="/">Home</Link>
         <Link href="/news">News</Link>
-        <Link href="/Maps">Get Here!</Link>
+        <Link href="/Contact">Contact</Link>
         <Link href="/about">About</Link>
       </div>
       {/*Story of Dim-Sum*/}
