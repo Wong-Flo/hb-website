@@ -7,9 +7,9 @@ export default function Home() {
       {/*NAVBAR*/}
       <div className={styles.TopNavBar}>
         <Link href="/">Home</Link>
-        <a href="/news">News</a>
-        <Link href="/contact">Contact</Link>
-        <a href="/about">About</a>
+        <Link href="/news">News</Link>
+        <Link href="/Maps">Get Here!</Link>
+        <Link href="/about">About</Link>
       </div>
       {/*Story of Dim-Sum*/}
       <div className={styles.Subtitles}>
@@ -21,12 +21,11 @@ export default function Home() {
           The Story of Dim-Sum, is a centuries-old culinary tradition that
           originated in China’s Guangdong province. Initially created as small
           snacks to accompany tea for weary travelers, Dim-Sum evolved into a
-          cultural staple, blending exquisite flavors with the practice of{' '}
-          <strong>Yum Cha </strong>(tea drinking). Over time, it became a
-          cherished social tradition, bringing families and friends together
-          over a variety of bite-sized dishes. Today, dim sum is celebrated
-          worldwide, from bustling tea houses in Hong Kong to modern restaurants
-          across the globe.
+          cultural staple, blending exquisite flavors with the practice of Yum
+          Cha (tea drinking). Over time, it became a cherished social tradition,
+          bringing families and friends together over a variety of bite-sized
+          dishes. Today, dim sum is celebrated worldwide, from bustling tea
+          houses in Hong Kong to modern restaurants across the globe.
         </span>
       </div>
       {/*Experience Section*/}
@@ -63,6 +62,13 @@ export default function Home() {
         <span className={styles.SubtitlesColor}> Month</span>
       </div>
       <div className={styles.DishOfTheMonthSection}></div>
+      <footer className={styles.FooterSection}>
+        Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,
+        Rechtsform: Gesellschaft mit beschränkter Haftung, Sitz: Wien, Kammer:
+        Gastronomie, Fachgruppe Wien Umsatzsteuer-Identifikationsnummer: UID ATU
+        67715225, Firmenbuchnummer: FN 386694v, Firmenbuchgericht:
+        Handelsgericht Wien{' '}
+      </footer>
     </>
   );
 }

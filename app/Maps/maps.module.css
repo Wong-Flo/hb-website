@@ -1,0 +1,23 @@
+.OpeningTimesTable {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.OpeningTimesTable td {
+  padding: 8px 12px;
+}
+
+.OpeningTimesTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.OpeningTimesTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.OpeningTimesTable td:first-child {
+  font-weight: bold;
+}
