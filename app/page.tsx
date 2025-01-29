@@ -4,23 +4,27 @@ export default function Home() {
   return (
     <>
       {/*Story of Dim-Sum*/}
-      <div className={styles.Subtitles}>
-        Story of
-        <span className={styles.SubtitlesColor}> Dim-Sum</span>
-      </div>
-      <div className={styles.StorySection}>
-        <span className={styles.StoryDescription}>
-          The Story of Dim-Sum, is a centuries-old culinary tradition that
-          originated in China’s Guangdong province. Initially created as small
-          snacks to accompany tea for weary travelers, Dim-Sum evolved into a
-          cultural staple, blending exquisite flavors with the practice of Yum
-          Cha (tea drinking). Over time, it became a cherished social tradition,
-          bringing families and friends together over a variety of bite-sized
-          dishes. Today, dim sum is celebrated worldwide, from bustling tea
-          houses in Hong Kong to modern restaurants across the globe.
-        </span>
+      <div className={styles.StorySectionContainer}>
+        <div className={styles.Subtitles}>
+          Story of
+          <span className={styles.SubtitlesColor}> Dim-Sum</span>
+        </div>
+        <div className={styles.StorySection}>
+          <span className={styles.StoryDescription}>
+            The Story of Dim-Sum, is a centuries-old culinary tradition that
+            originated in China’s Guangdong province. Initially created as small
+            snacks to accompany tea for weary travelers, Dim-Sum evolved into a
+            cultural staple, blending exquisite flavors with the practice of Yum
+            Cha (tea drinking). Over time, it became a cherished social
+            tradition, bringing families and friends together over a variety of
+            bite-sized dishes. Today, dim sum is celebrated worldwide, from
+            bustling tea houses in Hong Kong to modern restaurants across the
+            globe.
+          </span>
+        </div>
       </div>
       {/*Experience Section*/}
+      <div className={styles.ExperienceSectionContainer}>
       <div className={styles.Subtitles}>
         It&apos;s not just food,
         <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
@@ -54,7 +58,6 @@ export default function Home() {
         <span className={styles.SubtitlesColor}> Month</span>
       </div>
       <div className={styles.DishOfTheMonthSection}></div>
-
     </>
   );
 }

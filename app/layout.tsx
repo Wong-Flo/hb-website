@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './layout.module.css';
 
@@ -33,6 +34,16 @@ export default function RootLayout({
           <Link href="/Contact">Contact</Link>
           <Link href="/about">About</Link>
         </div>
+        <Link href="/">
+          <Image
+            src="/hb_logo.png"
+            alt="Happy Buddha Logo"
+            width={80}
+            height={80}
+            className={styles.LogoTopRight}
+          />
+        </Link>
+
         <main>{children}</main>
         <footer className={styles.FooterSection}>
           Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,

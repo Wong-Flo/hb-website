@@ -2,12 +2,13 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  color: white;
 }
 
 .SubtitlesColor {
-  color: #cd372d;
+  color: var(--hb-red);
 }
 
 .DescriptionText {
@@ -70,22 +71,33 @@
   align-items: center;
   justify-content: center;
 }
-.StorySection {
+.StorySectionContainer {
+  background-image: url('/DimSumF2.jpeg');
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.StorySection {
+  width: 80%;
   height: 18rem;
-  background-color: lightcoral;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
 }
 .StoryDescription {
   width: 80%;
   max-height: 16rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; /* Center text horizontally */
+  margin: auto;
+  text-align: center;
   font-family: 'Cursive', sans-serif;
   font-style: italic;
   line-height: 1.6;
@@ -93,18 +105,20 @@
   overflow-y: auto;
   overflow-x: hidden;
   text-overflow: ellipsis;
-  display: flex; /* Add flex display */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 616px) {
   .FoodWeServeSection {
     overflow-x: scroll;
   }
   .StoryDescription {
-    width: 100%;
-    height: auto;
-    max-height: 16rem;
+    width: 80%;
+    max-height: auto;
+    margin: auto;
+    overflow-y: scroll;
+    padding-top: 8rem;
   }
 }
