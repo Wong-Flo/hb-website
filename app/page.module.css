@@ -19,7 +19,7 @@
 .DivisionSection {
   width: 100%;
   height: 18rem;
-  background-color: lightgrey;
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -71,9 +71,9 @@
   align-items: center;
   justify-content: center;
 }
-.StorySectionContainer {
-  background-image: url('/DimSumF2.jpeg');
-  background-size: 200%;
+.BackgroundImageContainer {
+  animation: backgroundChange 25s infinite;
+  background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -81,6 +81,23 @@
   height: auto;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
+}
+@keyframes backgroundChange {
+  0% {
+    background-image: url('/DimSumF2.jpeg');
+  }
+  25% {
+    background-image: url('/DimSumF17.jpeg');
+  }
+  50% {
+    background-image: url('/DimSumF22.jpeg');
+  }
+  75% {
+    background-image: url('/DimSumF15.jpeg');
+  }
+  100% {
+    background-image: url('/DimSumF2.jpeg');
+  }
 }
 .StorySection {
   width: 80%;

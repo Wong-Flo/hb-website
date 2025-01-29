@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       {/*Story of Dim-Sum*/}
-      <div className={styles.StorySectionContainer}>
+      <div className={styles.BackgroundImageContainer}>
         <div className={styles.Subtitles}>
           Story of
           <span className={styles.SubtitlesColor}> Dim-Sum</span>
@@ -22,42 +22,46 @@ export default function Home() {
             globe.
           </span>
         </div>
-      </div>
-      {/*Experience Section*/}
-      <div className={styles.ExperienceSectionContainer}>
-      <div className={styles.Subtitles}>
-        It&apos;s not just food,
-        <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
-      </div>
-      <div className={styles.DivisionSection}>BannerPicture</div>
 
-      <div className={styles.Subtitles}>
-        Food We <span className={styles.SubtitlesColor}>Serves</span>
-        <div className={styles.DescriptionText}>
-          We always serve the best and most authentic food dishes all around the
-          World
-        </div>
-      </div>
-      <div className={styles.FoodWeServeSection}>
-        <div className={styles.OurFoodSectionIcon}>
-          <div className={styles.RoundedImage}></div>Food Type
-        </div>
-        <div className={styles.OurFoodSectionIcon}>
-          <div className={styles.RoundedImage}></div>Food Type
-        </div>
-        <div className={styles.OurFoodSectionIcon}>
-          <div className={styles.RoundedImage}></div>Food Type
-        </div>
-        <div className={styles.OurFoodSectionIcon}>
-          <div className={styles.RoundedImage}></div>Food Type
-        </div>
-      </div>
+        {/*Experience Section*/}
 
-      <div className={styles.Subtitles}>
-        Dish of the
-        <span className={styles.SubtitlesColor}> Month</span>
+        <div className={styles.Subtitles}>
+          It&apos;s not just food,
+          <span className={styles.SubtitlesColor}>
+            {' '}
+            It&apos;s an experience.
+          </span>
+        </div>
+        <div className={styles.DivisionSection}>BannerPicture</div>
+
+        <div className={styles.Subtitles}>
+          Food We <span className={styles.SubtitlesColor}>Serves</span>
+          <div className={styles.DescriptionText}>
+            We always serve the best and most authentic food dishes all around
+            the World
+          </div>
+        </div>
+        <div className={styles.FoodWeServeSection}>
+          <div className={styles.OurFoodSectionIcon}>
+            <div className={styles.RoundedImage}></div>Food Type
+          </div>
+          <div className={styles.OurFoodSectionIcon}>
+            <div className={styles.RoundedImage}></div>Food Type
+          </div>
+          <div className={styles.OurFoodSectionIcon}>
+            <div className={styles.RoundedImage}></div>Food Type
+          </div>
+          <div className={styles.OurFoodSectionIcon}>
+            <div className={styles.RoundedImage}></div>Food Type
+          </div>
+        </div>
+
+        <div className={styles.Subtitles}>
+          Dish of the
+          <span className={styles.SubtitlesColor}> Month</span>
+        </div>
+        <div className={styles.DishOfTheMonthSection}></div>
       </div>
-      <div className={styles.DishOfTheMonthSection}></div>
     </>
   );
 }
