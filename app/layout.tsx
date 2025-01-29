@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import Link from 'next/link';
+import styles from './layout.module.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,7 +27,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className={styles.TopNavBar}>
+          <Link href="/">Home</Link>
+          <Link href="/news">News</Link>
+          <Link href="/Contact">Contact</Link>
+          <Link href="/about">About</Link>
+        </div>
+        <main>{children}</main>
+        <footer className={styles.FooterSection}>
+          Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,
+          Rechtsform: Gesellschaft mit beschränkter Haftung, Sitz: Wien, Kammer:
+          Gastronomie, Fachgruppe Wien Umsatzsteuer-Identifikationsnummer: UID
+          ATU 67715225, Firmenbuchnummer: FN 386694v, Firmenbuchgericht:
+          Handelsgericht Wien
+        </footer>
       </body>
     </html>
   );

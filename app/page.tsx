@@ -1,16 +1,8 @@
-import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Home() {
   return (
     <>
-      {/*NAVBAR*/}
-      <div className={styles.TopNavBar}>
-        <Link href="/">Home</Link>
-        <Link href="/news">News</Link>
-        <Link href="/Contact">Contact</Link>
-        <Link href="/about">About</Link>
-      </div>
       {/*Story of Dim-Sum*/}
       <div className={styles.Subtitles}>
         Story of
@@ -62,13 +54,7 @@ export default function Home() {
         <span className={styles.SubtitlesColor}> Month</span>
       </div>
       <div className={styles.DishOfTheMonthSection}></div>
-      <footer className={styles.FooterSection}>
-        Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,
-        Rechtsform: Gesellschaft mit beschränkter Haftung, Sitz: Wien, Kammer:
-        Gastronomie, Fachgruppe Wien Umsatzsteuer-Identifikationsnummer: UID ATU
-        67715225, Firmenbuchnummer: FN 386694v, Firmenbuchgericht:
-        Handelsgericht Wien{' '}
-      </footer>
+
     </>
   );
 }
