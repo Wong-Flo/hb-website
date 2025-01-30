@@ -1,7 +1,48 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 
+const foodWeServe = [
+  {
+    title: 'Dim-Sum',
+    alt: 'DimSumF5',
+    src: '/DimSumF5.png',
+  },
+  {
+    title: 'Soup',
+    alt: 'Soup12',
+    src: '/Soup12.png',
+  },
+  {
+    title: 'Main Dishes',
+    alt: 'Dish142',
+    src: '/Dish142.png',
+  },
+  {
+    title: 'Vegetarian',
+    alt: 'Dish94',
+    src: '/Dish94.png',
+  },
+  {
+    title: 'Dessert',
+    alt: 'DimSumF43',
+    src: '/DimSumF43.png',
+  },
+];
 export default function Home() {
+  const scrollFoodWeServe = () => {
+    return foodWeServe.concat(foodWeServe).map((item, index) => (
+      <div key={index} className={styles.OurFoodSectionIcon}>
+        <Image
+          src={item.src}
+          alt={item.alt}
+          width="100"
+          height="100"
+          className={styles.RoundedImage}
+        />
+        {item.title}
+      </div>
+    ));
+  };
   return (
     <>
       {/*Story of Dim-Sum*/}
@@ -67,68 +108,7 @@ export default function Home() {
             the World
           </div>
         </div>
-        <div className={styles.FoodWeServeSection}>
-          <div className={styles.OurFoodSectionIcon}>
-            <div>
-              <Image
-                src="/DimSumF5.png"
-                alt="Dish 12"
-                width="150"
-                height="150"
-                className={styles.RoundedImage}
-              />
-            </div>
-            DIM-SUM
-          </div>
-          <div className={styles.OurFoodSectionIcon}>
-            <div>
-              <Image
-                src="/Soup12.png"
-                alt="Soup 12"
-                width="150"
-                height="150"
-                className={styles.RoundedImage}
-              />
-            </div>
-            SOUP
-          </div>
-          <div className={styles.OurFoodSectionIcon}>
-            <div>
-              <Image
-                src="/Dish142.png"
-                alt="Dish 12"
-                width="150"
-                height="150"
-                className={styles.RoundedImage}
-              />
-            </div>
-            MAIN DISHES
-          </div>
-          <div className={styles.OurFoodSectionIcon}>
-            <div>
-              <Image
-                src="/Dish94.png"
-                alt="Dish 12"
-                width="150"
-                height="150"
-                className={styles.RoundedImage}
-              />
-            </div>
-            VEGETARIAN
-          </div>
-          <div className={styles.OurFoodSectionIcon}>
-            <div>
-              <Image
-                src="/DimSumF43.png"
-                alt="Dish 12"
-                width="150"
-                height="150"
-                className={styles.RoundedImage}
-              />
-            </div>
-            DESSERT
-          </div>
-        </div>
+        <div className={styles.FoodWeServeSection}>{scrollFoodWeServe()}</div>
 
         <div className={styles.Subtitles}>
           Dish of the
