@@ -80,22 +80,22 @@ export default function Home() {
             <Image
               src="/Interior1.jpg"
               alt="Picture of tables"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
               className={styles.InteriorImage}
             />
             <Image
               src="/Interior2.jpg"
               alt="Picture of Outside Door"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
               className={styles.InteriorImage}
             />
             <Image
               src="/Interior3.jpg"
               alt="Picture of Outside Door"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
               className={styles.InteriorImage}
             />
           </div>
