@@ -1,3 +1,12 @@
+.Title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .Subtitles {
   text-align: center;
   font-size: 1.5rem;
@@ -19,36 +28,28 @@
 .DivisionSection {
   width: 100%;
   height: 18rem;
-
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  /*  margin-left: auto;
+  margin-right: auto; */
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow-x: auto;
+  overflow: scroll;
+  align-content: center;
+}
+.InteriorImage {
+  padding: 0.5rem;
+  border-radius: 12%;
 }
 .FoodWeServeSection {
   width: 100%;
   height: 18rem;
-  background-color: lightskyblue;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.DishOfTheMonthSection {
-  width: 100%;
-  height: 30rem;
-  background-color: lightsalmon;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .OurFoodSectionIcon {
   width: 10rem;
   height: 16rem;
@@ -60,10 +61,19 @@
   flex-wrap: wrap;
   border-radius: 25%;
   flex: 0 0 auto;
+  color: white;
 }
-
+.DishOfTheMonthSection {
+  width: 100%;
+  height: 30rem;
+  background-color: lightsalmon;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .RoundedImage {
-  background-color: black;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -79,7 +89,7 @@
   background-attachment: fixed;
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
 }
 @keyframes backgroundChange {

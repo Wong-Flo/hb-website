@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       {/*Story of Dim-Sum*/}
       <div className={styles.BackgroundImageContainer}>
+        <div className={styles.Title}>HAPPY BUDDHA</div>
         <div className={styles.Subtitles}>
           Story of
           <span className={styles.SubtitlesColor}> Dim-Sum</span>
@@ -32,7 +34,31 @@ export default function Home() {
             It&apos;s an experience.
           </span>
         </div>
-        <div className={styles.DivisionSection}>BannerPicture</div>
+        <div className={styles.DivisionSection}>
+          <div>
+            <Image
+              src="/Interior1.jpg"
+              alt="Picture of tables"
+              width={300}
+              height={300}
+              className={styles.InteriorImage}
+            />
+            <Image
+              src="/Interior2.jpg"
+              alt="Picture of Outside Door"
+              width={300}
+              height={300}
+              className={styles.InteriorImage}
+            />
+            <Image
+              src="/Interior3.jpg"
+              alt="Picture of Outside Door"
+              width={300}
+              height={300}
+              className={styles.InteriorImage}
+            />
+          </div>
+        </div>
 
         <div className={styles.Subtitles}>
           Food We <span className={styles.SubtitlesColor}>Serves</span>
@@ -43,16 +69,64 @@ export default function Home() {
         </div>
         <div className={styles.FoodWeServeSection}>
           <div className={styles.OurFoodSectionIcon}>
-            <div className={styles.RoundedImage}></div>Food Type
+            <div>
+              <Image
+                src="/DimSumF5.png"
+                alt="Dish 12"
+                width="150"
+                height="150"
+                className={styles.RoundedImage}
+              />
+            </div>
+            DIM-SUM
           </div>
           <div className={styles.OurFoodSectionIcon}>
-            <div className={styles.RoundedImage}></div>Food Type
+            <div>
+              <Image
+                src="/Soup12.png"
+                alt="Soup 12"
+                width="150"
+                height="150"
+                className={styles.RoundedImage}
+              />
+            </div>
+            SOUP
           </div>
           <div className={styles.OurFoodSectionIcon}>
-            <div className={styles.RoundedImage}></div>Food Type
+            <div>
+              <Image
+                src="/Dish142.png"
+                alt="Dish 12"
+                width="150"
+                height="150"
+                className={styles.RoundedImage}
+              />
+            </div>
+            MAIN DISHES
           </div>
           <div className={styles.OurFoodSectionIcon}>
-            <div className={styles.RoundedImage}></div>Food Type
+            <div>
+              <Image
+                src="/Dish94.png"
+                alt="Dish 12"
+                width="150"
+                height="150"
+                className={styles.RoundedImage}
+              />
+            </div>
+            VEGETARIAN
+          </div>
+          <div className={styles.OurFoodSectionIcon}>
+            <div>
+              <Image
+                src="/DimSumF43.png"
+                alt="Dish 12"
+                width="150"
+                height="150"
+                className={styles.RoundedImage}
+              />
+            </div>
+            DESSERT
           </div>
         </div>
 
