@@ -1,12 +1,3 @@
-.Title {
-  text-align: center;
-  font-size: 5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .Subtitles {
   text-align: center;
   font-size: 1.5rem;
@@ -112,34 +103,7 @@
   align-items: center;
   justify-content: center;
 }
-.BackgroundImageContainer {
-  animation: backgroundChange 25s infinite;
-  background-size: 110%;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-}
-@keyframes backgroundChange {
-  0% {
-    background-image: url('/DimSumF2.jpeg');
-  }
-  25% {
-    background-image: url('/DimSumF17.jpeg');
-  }
-  50% {
-    background-image: url('/DimSumF22.jpeg');
-  }
-  75% {
-    background-image: url('/DimSumF15.jpeg');
-  }
-  100% {
-    background-image: url('/DimSumF2.jpeg');
-  }
-}
+
 .StorySection {
   width: 80%;
   height: 18rem;

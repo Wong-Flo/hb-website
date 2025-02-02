@@ -1,3 +1,11 @@
+.Title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
 .BackgroundImageContainer {
   animation: backgroundChange 25s infinite;
   background-size: 110%;
@@ -30,14 +38,14 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .TopNavBar a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem 3rem;
   text-decoration: none;
   font-size: 17px;
 }

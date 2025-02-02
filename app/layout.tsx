@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className={styles.BackgroundImageContainer}>
+          <div className={styles.Title}>HAPPY BUDDHA</div>
           <div className={styles.TopNavBar}>
             <Link href="/">Home</Link>
             <Link href="/news">News</Link>

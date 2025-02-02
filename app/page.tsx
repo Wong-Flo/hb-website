@@ -66,7 +66,7 @@ export default function Home() {
     <>
       {/*Story of Dim-Sum*/}
       {/* <div className={styles.BackgroundImageContainer}> */}
-      <div className={styles.Title}>HAPPY BUDDHA</div>
+
       <div className={styles.Subtitles}>
         Story of
         <span className={styles.SubtitlesColor}> Dim-Sum</span>
