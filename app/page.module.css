@@ -64,7 +64,7 @@
   flex: 0 0 auto;
   color: white;
 }
-.DishOfTheMonthSection {
+.HighlightsOfTheMonthSection {
   width: 100%;
   height: 30rem;
 
@@ -73,6 +73,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.HighlightDishes {
+  width: 75%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 1rem;
+  position: relative;
+}
+.HighlightRoundedImage {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  right: 0;
+  position: absolute;
+  animation: rotateImage 10s infinite;
+  transform-origin: center;
+}
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .RoundedImage {
   width: 8rem;

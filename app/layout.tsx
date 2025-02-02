@@ -28,23 +28,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className={styles.TopNavBar}>
-          <Link href="/">Home</Link>
-          <Link href="/news">News</Link>
-          <Link href="/Contact">Contact</Link>
-          <Link href="/about">About</Link>
-        </div>
-        <Link href="/">
-          <Image
-            src="/hb_logo.png"
-            alt="Happy Buddha Logo"
-            width={80}
-            height={80}
-            className={styles.LogoTopRight}
-          />
-        </Link>
+        <div className={styles.BackgroundImageContainer}>
+          <div className={styles.TopNavBar}>
+            <Link href="/">Home</Link>
+            <Link href="/news">News</Link>
+            <Link href="/Contact">Contact</Link>
+            <Link href="/about">About</Link>
+          </div>
+          <Link href="/">
+            <Image
+              src="/hb_logo.png"
+              alt="Happy Buddha Logo"
+              width={80}
+              height={80}
+              className={styles.LogoTopRight}
+            />
+          </Link>
 
-        <main>{children}</main>
+          <main>{children}</main>
+        </div>
         <footer className={styles.FooterSection}>
           Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,
           Rechtsform: Gesellschaft mit beschränkter Haftung, Sitz: Wien, Kammer:

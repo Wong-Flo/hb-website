@@ -38,34 +38,7 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.BackgroundImageContainer {
-  animation: backgroundChange 20s infinite;
-  background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-}
-@keyframes backgroundChange {
-  0% {
-    background-image: url('/DimSumF2.jpeg');
-  }
-  25% {
-    background-image: url('/DimSumF17.jpeg');
-  }
-  50% {
-    background-image: url('/DimSumF22.jpeg');
-  }
-  75% {
-    background-image: url('/DimSumF15.jpeg');
-  }
-  100% {
-    background-image: url('/DimSumF2.jpeg');
-  }
-}
+
 @media (max-width: 680px) {
   .OpeningTimesTable,
   .OpeningTimesTable tr,
