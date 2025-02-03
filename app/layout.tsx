@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className={styles.TopNavBar}>
             <Link href="/">Home</Link>
             <Link href="/news">News</Link>
-            <Link href="/Contact">Contact</Link>
+            <Link href="/FindUs">Find us</Link>
             <Link href="/about">About</Link>
           </div>
           <Link href="/">
@@ -47,6 +47,39 @@ export default function RootLayout({
           </Link>
 
           <main>{children}</main>
+        </div>
+        <div className={styles.OpeningHours}>
+          <h2>Opening Hours</h2>
+          <table className={styles.OpeningTimesTable}>
+            <tbody>
+              <tr>
+                <td>
+                  Sunday - <br />
+                  Tuesday
+                </td>
+                <td>
+                  11:30-14:30 <br /> 17:30-21:30
+                </td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <td>
+                  Thursday - <br />
+                  Saturday
+                </td>
+                <td>
+                  11:30-14:30 <br />
+                  17:30-21:30
+                </td>
+              </tr>
+              <tr>
+                <td>Last order 30 minutes before closing</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <footer className={styles.FooterSection}>
           Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,
