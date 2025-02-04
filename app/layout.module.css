@@ -54,30 +54,65 @@
   background-color: #ddd;
   color: var(--hb-red);
 }
-.OpeningHours {
-  display: block;
-  width: 50%;
-  background-color: #333333;
-  color: white;
-  height: 25rem;
-  padding: 2rem;
-}
-.OpeningTimesTable {
+
+.BottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  table-layout: fixed;
-  color: white;
-  height: auto;
+  padding: 2rem;
+  background-color: #191919;
+  height: 30rem;
 }
-.OpeningTimesTable td {
+.OpeningTimes {
+  width: 50%;
+  height: 10rem;
+  color: white;
+  padding: 0.5rem;
+}
+.TimeRow {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.Day {
+  font-weight: bold;
+  color: #555;
+}
+.Hours {
+  color: #555;
+}
+.Closed {
+  color: rgba(255, 0, 0, 0.5);
+}
+.LastOrder {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.ContactSection {
+  width: 50%;
+  height: 10rem;
+  color: white;
+  padding: 0.5rem;
+}
+.InfoRow {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.InfoText {
+  color: #555;
 }
 .FooterSection {
   background-color: #191919;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
   left: 0;
   bottom: 0;
   width: 100%;

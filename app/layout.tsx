@@ -48,43 +48,63 @@ export default function RootLayout({
 
           <main>{children}</main>
         </div>
-        <div className={styles.OpeningHours}>
-          <h2>Opening Hours</h2>
-          <table className={styles.OpeningTimesTable}>
-            <tbody>
-              <tr>
-                <td>
-                  Sunday <br /> Monday <br /> Tuesday
-                </td>
-                <td>
-                  11:30-14:30 <br /> 17:30-21:30
-                </td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>
-                  Thursday <br /> Friday <br />
-                  Saturday
-                </td>
-                <td>
-                  11:30-14:30 <br />
-                  17:30-21:30
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <span style={{ fontSize: '0.7rem' }}>
-            **Last order 30 minutes before closing
-          </span>
+        <div className={styles.BottomSection}>
+          <div className={styles.OpeningTimes}>
+            <h2>Opening Times</h2>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Monday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Tuesday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Wednesday </span>
+              <span className={styles.Closed}>
+                <u>Closed</u>
+              </span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Thursday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Friday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Saturday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Sunday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <p className={styles.LastOrder}>
+              *Last Order 30 minutes before closing*
+            </p>
+          </div>
+          <div className={styles.ContactSection}>
+            <h2>Contact</h2>
+            <div className={styles.InfoRow}>
+              <span className={styles.InfoText}>
+                Mariahilfergürtel 17 | 1150 Vienna
+              </span>
+            </div>
+            <div className={styles.InfoRow}>
+              <span className={styles.InfoText}>+43-1-8934217</span>
+            </div>
+            <div className={styles.InfoRow}>
+              <span className={styles.InfoText}>info@happybuddha.co.at</span>
+            </div>
+          </div>
         </div>
         <footer className={styles.FooterSection}>
           <Link href="/Impressum">
             <u>Impressum</u>
           </Link>
-          <div>Happy Buddha Est. 1994</div>
+          <div style={{ paddingTop: '0.5rem' }}>Happy Buddha Est. 1994</div>
           <div className={styles.credit}> designed by F.W.</div>
         </footer>
       </body>
