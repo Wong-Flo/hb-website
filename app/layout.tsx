@@ -54,8 +54,7 @@ export default function RootLayout({
             <tbody>
               <tr>
                 <td>
-                  Sunday - <br />
-                  Tuesday
+                  Sunday <br /> Monday <br /> Tuesday
                 </td>
                 <td>
                   11:30-14:30 <br /> 17:30-21:30
@@ -67,7 +66,7 @@ export default function RootLayout({
               </tr>
               <tr>
                 <td>
-                  Thursday - <br />
+                  Thursday <br /> Friday <br />
                   Saturday
                 </td>
                 <td>
@@ -75,18 +74,18 @@ export default function RootLayout({
                   17:30-21:30
                 </td>
               </tr>
-              <tr>
-                <td>Last order 30 minutes before closing</td>
-              </tr>
             </tbody>
           </table>
+          <span style={{ fontSize: '0.7rem' }}>
+            **Last order 30 minutes before closing
+          </span>
         </div>
         <footer className={styles.FooterSection}>
-          Impressum gem. §14 UGB und § 5 ECG: Firma: W57 Gesellschaft m.b.H,
-          Rechtsform: Gesellschaft mit beschränkter Haftung, Sitz: Wien, Kammer:
-          Gastronomie, Fachgruppe Wien Umsatzsteuer-Identifikationsnummer: UID
-          ATU 67715225, Firmenbuchnummer: FN 386694v, Firmenbuchgericht:
-          Handelsgericht Wien
+          <Link href="/Impressum">
+            <u>Impressum</u>
+          </Link>
+          <div>Happy Buddha Est. 1994</div>
+          <div className={styles.credit}> designed by F.W.</div>
         </footer>
       </body>
     </html>

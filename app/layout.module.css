@@ -59,7 +59,7 @@
   width: 50%;
   background-color: #333333;
   color: white;
-  height: 20rem;
+  height: 25rem;
   padding: 2rem;
 }
 .OpeningTimesTable {
@@ -74,7 +74,7 @@
   padding: 1rem;
 }
 .FooterSection {
-  background-color: #333;
+  background-color: #191919;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -104,4 +104,9 @@
   .LogoTopRight {
     display: none;
   }
+}
+.credit {
+  font-size: 8px;
+  color: white;
+  float: right;
 }

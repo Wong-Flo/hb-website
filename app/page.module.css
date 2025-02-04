@@ -23,12 +23,14 @@
   margin-right: auto;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
+  padding: 1rem;
 }
 .InteriorImage {
   padding: 0.5rem;
   border-radius: 12%;
+  margin: 1rem;
 }
 .FoodWeServeSection {
   width: 100%;
@@ -39,7 +41,7 @@
   justify-content: center;
   align-items: center;
   overflow: visible;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .OurFoodSectionIcon {
@@ -140,7 +142,27 @@
     width: 80%;
     max-height: auto;
     margin: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-top: 8rem;
   }
+  .DivisionSection {
+    padding-top: 16rem;
+  }
+}
+
+/* Hide scroll bars for WebKit browsers */
+.DivisionSection::-webkit-scrollbar,
+.FoodWeServeSection::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scroll bars for other browsers */
+.DivisionSection {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.FoodWeServeSection {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
