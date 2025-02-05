@@ -32,7 +32,7 @@ export default function RootLayout({
           <div className={styles.Title}>HAPPY BUDDHA</div>
           <div className={styles.TopNavBar}>
             <Link href="/">Home</Link>
-            <Link href="/news">News</Link>
+            <Link href="/News">News</Link>
             <Link href="/FindUs">Find us</Link>
             <Link href="/about">About</Link>
           </div>

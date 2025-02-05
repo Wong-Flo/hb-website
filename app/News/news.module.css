@@ -1,0 +1,16 @@
+.NewsTitle {
+  color: var(--hb-red);
+  padding-top: 2rem;
+}
+.Date {
+  color: white;
+}
+.selectedDate {
+  color: white;
+}
+.Category {
+  color: white;
+}
+.Article {
+  color: var(--hb-red);
+}
