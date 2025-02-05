@@ -125,6 +125,11 @@
   margin: 1rem;
   z-index: 1000;
 }
+.credit {
+  font-size: 8px;
+  color: white;
+  float: right;
+}
 
 @media (max-width: 600px) {
   .TopNavBar a {
@@ -145,14 +150,16 @@
     width: 100%;
     margin-bottom: 1rem;
   }
+  .LogoTopRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 1000;
+  }
 }
-@media (max-width: 840px) {
+@media (max-width: 840px) and (min-width: 644px) {
   .LogoTopRight {
     display: none;
   }
-}
-.credit {
-  font-size: 8px;
-  color: white;
-  float: right;
 }
