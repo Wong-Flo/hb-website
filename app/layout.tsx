@@ -29,22 +29,24 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className={styles.BackgroundImageContainer}>
-          <div className={styles.Title}>HAPPY BUDDHA</div>
+          <div className={styles.Title}>
+            HAPPY BUDDHA{' '}
+            <Link href="/">
+              <Image
+                src="/hb_logo.png"
+                alt="Happy Buddha Logo"
+                width={70}
+                height={70}
+                /* className={styles.LogoTopRight} */
+              />
+            </Link>
+          </div>
           <div className={styles.TopNavBar}>
             <Link href="/">Home</Link>
             <Link href="/News">News</Link>
             <Link href="/FindUs">Find us</Link>
             <Link href="/about">About</Link>
           </div>
-          <Link href="/">
-            <Image
-              src="/hb_logo.png"
-              alt="Happy Buddha Logo"
-              width={80}
-              height={80}
-              className={styles.LogoTopRight}
-            />
-          </Link>
 
           <main>{children}</main>
         </div>

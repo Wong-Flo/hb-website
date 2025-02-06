@@ -24,10 +24,11 @@ export default function News() {
           durchschlagen muss, kann es nur mit Gottvertrauen versuchen, egal
           welcher Art. Der Stress lohnt sich. Das 1994 etablierte Restaurant
           genoss über Jahre einen Ruf wie Donnerhall – die Dim Sum genannten
-          (und "Dim Sam" gesprochenen), typisch südchinesischen, gedämpften,
-          frittierten und gebratenen Leckereien in vielfältiger Ausformung, die
-          Innereien (Kutteln! Darm!) und Äußereien (Hühnerfüße! Froschschenkel!
-          Seegurke!) gab es hier in einer Vielzahl und Qualität....
+          (und &quot;Dim Sam&quot; gesprochenen), typisch südchinesischen,
+          gedämpften, frittierten und gebratenen Leckereien in vielfältiger
+          Ausformung, die Innereien (Kutteln! Darm!) und Äußereien (Hühnerfüße!
+          Froschschenkel! Seegurke!) gab es hier in einer Vielzahl und
+          Qualität....
           <br />
           <Link href="https://www.derstandard.at/story/2000140613908/aeltestes-dim-sum-lokal-wiens-happy-buddhas-neue-bleibe">
             <u>Read More...</u>

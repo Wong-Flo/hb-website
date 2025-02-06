@@ -99,10 +99,11 @@
   height: 10rem;
   color: white;
   padding: 0.5rem;
+  text-align: right;
 }
 .InfoRow {
   display: flex;
-  align-items: center;
+  justify-content: right;
   padding: 1rem;
 }
 .InfoText {
@@ -118,13 +119,13 @@
   width: 100%;
   font-size: 8px;
 }
-.LogoTopRight {
+/* .LogoTopRight {
   position: absolute;
   top: 0;
   right: 0;
   margin: 1rem;
   z-index: 1000;
-}
+} */
 .credit {
   font-size: 8px;
   color: white;
@@ -150,13 +151,13 @@
     width: 100%;
     margin-bottom: 1rem;
   }
-  .LogoTopRight {
+  /* .LogoTopRight {
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
     z-index: 1000;
-  }
+  } */
 }
 @media (max-width: 840px) and (min-width: 644px) {
   .LogoTopRight {
