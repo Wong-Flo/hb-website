@@ -51,8 +51,11 @@
 }
 
 .TopNavBar a:hover {
-  background-color: #ddd;
   color: var(--hb-red);
+}
+.TopNavBar a:active,
+.TopNavBar a:focus {
+  text-decoration: underline;
 }
 
 .BottomSection {
