@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    /*<html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className={styles.BackgroundImageContainer}>
           <div className={styles.Title}>
@@ -37,7 +37,7 @@ export default function RootLayout({
                 alt="Happy Buddha Logo"
                 width={70}
                 height={70}
-                /* className={styles.LogoTopRight} */
+                /* className={styles.LogoTopRight}
               />
             </Link>
           </div>
@@ -109,6 +109,19 @@ export default function RootLayout({
           <div style={{ paddingTop: '0.5rem' }}>Happy Buddha Est. 1994</div>
           <div className={styles.credit}> designed by F.W.</div>
         </footer>
+      </body>
+    </html>*/
+    <html lang="en">
+      <body>
+        <div className={styles.TitleAndNavbar}>
+          <Image
+            src="/hb text&logo.png"
+            alt="Happy Buddha Logo"
+            width={70}
+            height={120}
+          />
+        </div>
+        <main>{children}</main>
       </body>
     </html>
   );

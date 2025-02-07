@@ -1,4 +1,4 @@
-.Title {
+/* .Title {
   text-align: center;
   font-size: 5rem;
   font-weight: bold;
@@ -128,7 +128,7 @@
   right: 0;
   margin: 1rem;
   z-index: 1000;
-} */
+}
 .credit {
   font-size: 8px;
   color: white;
@@ -154,16 +154,21 @@
     width: 100%;
     margin-bottom: 1rem;
   }
-  /* .LogoTopRight {
+   .LogoTopRight {
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
     z-index: 1000;
-  } */
+  }
 }
 @media (max-width: 840px) and (min-width: 644px) {
   .LogoTopRight {
     display: none;
   }
+}
+ */
+
+.TitleAndNavbar {
+  padding: 2rem;
 }
