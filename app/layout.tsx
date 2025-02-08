@@ -1,9 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './layout.module.css';
+/* import Image from 'next/image';
+import styles from './layout.module.css'; */
+import Navbar from './Navbar/Navbar';
+
+/* /import Link from 'next/link' */
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -112,15 +114,9 @@ export default function RootLayout({
       </body>
     </html>*/
     <html lang="en">
-      <body>
-        <div className={styles.TitleAndNavbar}>
-          <Image
-            src="/hb text&logo.png"
-            alt="Happy Buddha Logo"
-            width={70}
-            height={120}
-          />
-        </div>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar />
+
         <main>{children}</main>
       </body>
     </html>

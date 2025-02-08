@@ -1,4 +1,57 @@
-'use client';
+/* <div className={styles.Subtitles}>
+        It&apos;s not just food,
+        <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
+      </div>
+      <div className={styles.DivisionSection}>
+        <div>
+          <Image
+            src="/Interior1.jpg"
+            alt="Picture of tables"
+            width={250}
+            height={250}
+            className={styles.InteriorImage}
+          />
+          <Image
+            src="/Interior2.jpg"
+            alt="Picture of Outside Door"
+            width={250}
+            height={250}
+            className={styles.InteriorImage}
+          />
+          <Image
+            src="/Interior3.jpg"
+            alt="Picture of Outside Door"
+            width={250}
+            height={250}
+            className={styles.InteriorImage}
+          />
+        </div>
+      </div>
+
+      <div className={styles.Subtitles}>
+        Food We <span className={styles.SubtitlesColor}>Serves</span>
+        <div className={styles.DescriptionText}>
+          We always serve the best and most authentic food dishes all around the
+          World
+        </div>
+      </div>
+      <div className={styles.FoodWeServeSection}>{scrollFoodWeServe()}</div>
+
+      <div className={styles.Subtitles}>
+        Highlights of the
+        <span className={styles.SubtitlesColor}> Month</span>
+      </div>
+      <div className={styles.HighlightsOfTheMonthSection}>
+        <div className={styles.HighlightDishes}>{DiaShowOurFood()}</div>
+      </div>
+      </div>
+    </>
+  );
+}
+ */
+import styles from './page.module.css';
+
+/* 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from './page.module.css';
@@ -64,9 +117,9 @@ export default function Home() {
   };
   return (
     <>
-      {/*Story of Dim-Sum*/}
-      {/* <div className={styles.BackgroundImageContainer}> */}
-
+      {/*Story of Dim-Sum*/
+/* <div className={styles.BackgroundImageContainer}> */
+/*
       <div className={styles.Subtitles}>
         Story of
         <span className={styles.SubtitlesColor}> Dim-Sum</span>
@@ -83,56 +136,17 @@ export default function Home() {
           houses in Hong Kong to modern restaurants across the globe.
         </span>
       </div>
+*/
+{
+  /*Experience Section*/
+}
 
-      {/*Experience Section*/}
-
-      <div className={styles.Subtitles}>
-        It&apos;s not just food,
-        <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
+export default function Home() {
+  return (
+    <>
+      <div className={styles.TitleText}>
+        Mehr als nur Essen, es ist ein Erlebnis
       </div>
-      <div className={styles.DivisionSection}>
-        <div>
-          <Image
-            src="/Interior1.jpg"
-            alt="Picture of tables"
-            width={250}
-            height={250}
-            className={styles.InteriorImage}
-          />
-          <Image
-            src="/Interior2.jpg"
-            alt="Picture of Outside Door"
-            width={250}
-            height={250}
-            className={styles.InteriorImage}
-          />
-          <Image
-            src="/Interior3.jpg"
-            alt="Picture of Outside Door"
-            width={250}
-            height={250}
-            className={styles.InteriorImage}
-          />
-        </div>
-      </div>
-
-      <div className={styles.Subtitles}>
-        Food We <span className={styles.SubtitlesColor}>Serves</span>
-        <div className={styles.DescriptionText}>
-          We always serve the best and most authentic food dishes all around the
-          World
-        </div>
-      </div>
-      <div className={styles.FoodWeServeSection}>{scrollFoodWeServe()}</div>
-
-      <div className={styles.Subtitles}>
-        Highlights of the
-        <span className={styles.SubtitlesColor}> Month</span>
-      </div>
-      <div className={styles.HighlightsOfTheMonthSection}>
-        <div className={styles.HighlightDishes}>{DiaShowOurFood()}</div>
-      </div>
-      {/* </div> */}
     </>
   );
 }

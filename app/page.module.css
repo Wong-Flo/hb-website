@@ -1,4 +1,4 @@
-.Subtitles {
+/* .Subtitles {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
@@ -155,19 +155,21 @@
   }
 }
 
-/* Hide scroll bars for WebKit browsers */
+/* Hide scroll bars for WebKit browsers
 .DivisionSection::-webkit-scrollbar,
 .FoodWeServeSection::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scroll bars for other browsers */
+/* Hide scroll bars for other browsers
 .DivisionSection {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge
+  scrollbar-width: none; /* Firefox
 }
 
 .FoodWeServeSection {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge
+  scrollbar-width: none; /* Firefox
+} */
+.TitleText {
 }
