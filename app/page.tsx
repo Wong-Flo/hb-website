@@ -1,3 +1,4 @@
+import Navbar from './Navbar/Navbar';
 /* <div className={styles.Subtitles}>
         It&apos;s not just food,
         <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
@@ -144,9 +145,8 @@ export default function Home() {
 export default function Home() {
   return (
     <>
-      <div className={styles.TitleText}>
-        Mehr als nur Essen, es ist ein Erlebnis
-      </div>
+      <Navbar titleText="Welcome to Happy Buddha" />
+      <div className={styles.TitleText}></div>
     </>
   );
 }

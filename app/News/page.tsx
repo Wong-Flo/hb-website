@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import Navbar from '../Navbar/Navbar';
 import styles from './news.module.css';
 
 export default function News() {
   return (
     <>
+      <Navbar titleText="Nachrichten über uns." />
       <div className={styles.Container}>
         <h2 className={styles.NewsTitle}>This is the news Page</h2>
         <span className={styles.Date}>Date: </span>

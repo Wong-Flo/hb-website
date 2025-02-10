@@ -4,7 +4,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from '../layout.module.css';
 
-export default function Navbar() {
+interface NavbarProps {
+  titleText?: string;
+}
+export default function Navbar({ titleText }: NavbarProps) {
   const pathname = usePathname();
 
   // Determine the background image based on the current route
@@ -58,6 +61,11 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
+      {titleText && (
+        <div className={styles.TitleText}>
+          <h1>{titleText}</h1>
+        </div>
+      )}
     </div>
   );
 }

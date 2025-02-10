@@ -1,10 +1,11 @@
+import Navbar from '../Navbar/Navbar';
 import styles from './Impressum.module.css';
 
 export default function Impressum() {
   return (
     <>
+      <Navbar titleText="Impressum" />
       <div className={styles.ImpressumContainer}>
-        <h1>Impressum</h1>
         <h3>Gem. §14 UGB und § 5 E-Commerce-Gesetz:</h3>
         <strong>Firmenname:</strong> W57 Gesellschaft m.b.H
         <br />

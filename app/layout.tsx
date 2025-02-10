@@ -1,11 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-/* import Image from 'next/image';
-import styles from './layout.module.css'; */
-import Navbar from './Navbar/Navbar';
-
-/* /import Link from 'next/link' */
+import Link from 'next/link';
+/*import Image from 'next/image';*/
+import styles from './layout.module.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -115,9 +113,14 @@ export default function RootLayout({
     </html>*/
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
-
         <main>{children}</main>
+        <footer className={styles.FooterSection}>
+          <Link href="/Impressum">
+            <u>Impressum</u>
+          </Link>
+          <div style={{ paddingTop: '0.5rem' }}>Happy Buddha Est. 1994</div>
+          <div className={styles.credit}> designed by F.W.</div>
+        </footer>
       </body>
     </html>
   );
