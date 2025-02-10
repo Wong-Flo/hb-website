@@ -146,7 +146,19 @@ export default function Home() {
   return (
     <>
       <Navbar titleText="Welcome to Happy Buddha" />
-      <div className={styles.TitleText}></div>
+      <div className={styles.SectionContainer}>
+        <div className={styles.SectionLeft}>
+          <h1 className={styles.SectionTitle}>Dim-Sum</h1>
+          The Story of Dim-Sum, is a centuries-old culinary tradition that
+          originated in China’s Guangdong province. Initially created as small
+          snacks to accompany tea for weary travelers, Dim-Sum evolved into a
+          cultural staple, blending exquisite flavors with the practice of Yum
+          Cha (tea drinking). Over time, it became a cherished social tradition,
+          bringing families and friends together over a variety of bite-sized
+          dishes. Today, dim sum is celebrated worldwide, from bustling tea
+          houses in Hong Kong to modern restaurants across the globe.
+        </div>
+      </div>
     </>
   );
 }
