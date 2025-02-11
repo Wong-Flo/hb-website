@@ -149,7 +149,7 @@ export default function Home() {
       <Navbar titleText="Welcome to Happy Buddha" />
       <div className={styles.DivisionDivider}>
         <Image
-          src="/StockDivision Divider.jpg"
+          src="/StockImagePattern.jpg"
           alt="Cartoon Picture of dinner Table and a Dim-sum Cart"
           layout="fill"
         />

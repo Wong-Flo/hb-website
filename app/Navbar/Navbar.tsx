@@ -16,6 +16,9 @@ export default function Navbar({ titleText }: NavbarProps) {
     case '/':
       backgroundImage = "url('StockPic1.jpg')";
       break;
+    case '/Menu':
+      backgroundImage = "url('StockPic5.jpg')";
+      break;
     case '/News':
       backgroundImage = "url('StockPic2.jpg')";
       break;
@@ -43,6 +46,9 @@ export default function Navbar({ titleText }: NavbarProps) {
         <div className={styles.Navbar}>
           <Link href="/" className={pathname === '/' ? 'active' : ''}>
             Home
+          </Link>
+          <Link href="/Menu" className={pathname === '/Menu' ? 'active' : ''}>
+            Menü
           </Link>
           <Link href="/News" className={pathname === '/News' ? 'active' : ''}>
             Aktuelles

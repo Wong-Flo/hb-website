@@ -114,6 +114,44 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <main>{children}</main>
+        <div className={styles.BottomSection}>
+          <div className={styles.OpeningTimes}>
+            <h2>Opening Times</h2>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Monday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Tuesday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Wednesday </span>
+              <span className={styles.Closed}>
+                <u>Closed</u>
+              </span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Thursday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Friday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Saturday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <div className={styles.TimeRow}>
+              <span className={styles.Day}>Sunday </span>
+              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
+            </div>
+            <p className={styles.LastOrder}>
+              *Last Order 30 minutes before closing*
+            </p>
+          </div>
+        </div>
         <footer className={styles.FooterSection}>
           <Link href="/Impressum">
             <u>Impressum</u>

@@ -162,6 +162,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-size: cover;
   background-position: center;
   height: 37rem;
   width: 100%;
@@ -201,6 +202,43 @@
   text-align: center;
   color: white;
   font-size: 36px;
+}
+.BottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem;
+  background-color: #191919;
+  height: 30rem;
+}
+.OpeningTimes {
+  width: 50%;
+  height: 10rem;
+  color: white;
+  padding: 0.5rem;
+}
+.TimeRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.Day {
+  font-weight: bold;
+  color: #555;
+}
+.Hours {
+  color: #555;
+}
+.Closed {
+  color: rgba(255, 0, 0, 0.5);
+}
+.LastOrder {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #555;
 }
 .credit {
   font-size: 8px;
