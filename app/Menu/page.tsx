@@ -1,21 +1,30 @@
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import { Viewer, Worker } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+'use client';
 import Image from 'next/image';
+import { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
 import Navbar from '../Navbar/Navbar';
 import styles from './Menu.module.css';
 
+// Set the workerSrc property
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js`;
+
 export default function Menu() {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  const [numPages, setNumPages] = useState<number | null>(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
+    setNumPages(numPages);
+  }
+
   return (
     <>
-      <Navbar titleText="this is the Menu Page" />
+      <Navbar titleText="This is the Menu Page" />
       <div className={styles.DivisionDivider}>
         <Image
           src="/StockPic6.jpg"
           alt="Cartoon Picture of dinner Table and a Dim-sum Cart"
           layout="fill"
+          objectFit="cover"
         />
       </div>
       <div className={styles.SectionContainer}>
@@ -43,14 +52,26 @@ export default function Menu() {
           </div>
         </div>
         <div className={styles.SectionRight}>
-          <Worker
-            workerUrl={`https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js`}
+          <Document
+            file="/Speisekarte.pdf"
+            onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Viewer
-              fileUrl="/Speisekarte.pdf"
-              plugins={[defaultLayoutPluginInstance]}
-            />
-          </Worker>
+            <Page pageNumber={pageNumber} />
+          </Document>
+          <div>
+            <button
+              disabled={pageNumber <= 1}
+              onClick={() => setPageNumber(pageNumber - 1)}
+            >
+              Previous
+            </button>
+            <button
+              disabled={numPages === null || pageNumber >= numPages}
+              onClick={() => setPageNumber(pageNumber + 1)}
+            >
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </>
