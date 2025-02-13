@@ -1,31 +1,21 @@
-'use client';
-import Image from 'next/image';
-import { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+/* import Image from 'next/image'; */
 import Navbar from '../Navbar/Navbar';
 import styles from './Menu.module.css';
-
-// Set the workerSrc property
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js`;
+import MenuTab from './MenuTab';
 
 export default function Menu() {
-  const [numPages, setNumPages] = useState<number | null>(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages);
-  }
-
   return (
     <>
       <Navbar titleText="This is the Menu Page" />
       <div className={styles.DivisionDivider}>
-        <Image
+        <MenuTab />
+        {/*   <div className={styles.FoodCategoryTab}></div>
+         <Image
           src="/StockPic6.jpg"
-          alt="Cartoon Picture of dinner Table and a Dim-sum Cart"
+          alt="dinner Table with different kinds of Dim-Sum"
           layout="fill"
           objectFit="cover"
-        />
+        />*/}
       </div>
       <div className={styles.SectionContainer}>
         <div className={styles.SectionLeft}>
@@ -51,28 +41,7 @@ export default function Menu() {
             <span>Nachspeisen</span>
           </div>
         </div>
-        <div className={styles.SectionRight}>
-          <Document
-            file="/Speisekarte.pdf"
-            onLoadSuccess={onDocumentLoadSuccess}
-          >
-            <Page pageNumber={pageNumber} />
-          </Document>
-          <div>
-            <button
-              disabled={pageNumber <= 1}
-              onClick={() => setPageNumber(pageNumber - 1)}
-            >
-              Previous
-            </button>
-            <button
-              disabled={numPages === null || pageNumber >= numPages}
-              onClick={() => setPageNumber(pageNumber + 1)}
-            >
-              Next
-            </button>
-          </div>
-        </div>
+        <div className={styles.SectionRight}></div>
       </div>
     </>
   );
