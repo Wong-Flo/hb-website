@@ -1,11 +1,32 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
+import ImageModal from './ImageModal';
 import styles from './Menu.module.css';
 
 export default function MenuTab() {
   const [activeTab, setActiveTab] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImageSrc, setModalImageSrc] = useState('');
+  const [modalImageAlt, setModalImageAlt] = useState('');
+  const [modalImageWidth, setModalImageWidth] = useState(0);
+  const [modalImageHeight, setModalImageHeight] = useState(0);
 
+  const openModal = (
+    src: string,
+    alt: string,
+    width: number,
+    height: number,
+  ) => {
+    setModalImageSrc(src);
+    setModalImageAlt(alt);
+    setIsModalOpen(true);
+    setModalImageWidth(width);
+    setModalImageHeight(height);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className={styles.MenuTabContainer}>
       <div className={styles.MenuTabCategory}>
@@ -58,8 +79,28 @@ export default function MenuTab() {
             activeTab === 0 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 1
-          <Image src="/DimSumF2.jpeg" alt="dimsumF2" width={240} height={240} />
+          <Image
+            src="/MenuImages/MenuPage2.jpg"
+            alt="Drinks Menu"
+            width={240}
+            height={240}
+            quality={85}
+            onClick={() =>
+              openModal('/MenuImages/MenuPage2.jpg', 'Drinks Menu', 480, 480)
+            }
+            style={{ cursor: 'pointer' }}
+          />
+          <Image
+            src="/MenuImages/MenuPage3.jpg"
+            alt="Drinks Menu"
+            width={240}
+            height={240}
+            quality={85}
+            onClick={() =>
+              openModal('/MenuImages/MenuPage3.jpg', 'Drinks Menu', 480, 480)
+            }
+            style={{ cursor: 'pointer' }}
+          />
         </div>
         <div
           className={
@@ -104,6 +145,15 @@ export default function MenuTab() {
           Content for Tab 7
         </div>
       </div>
+      {isModalOpen && (
+        <ImageModal
+          src={modalImageSrc}
+          alt={modalImageAlt}
+          width={modalImageWidth}
+          height={modalImageHeight}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 }
