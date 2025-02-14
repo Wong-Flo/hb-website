@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import ImageModal from './ImageModal';
 import styles from './Menu.module.css';
+import { menuArray } from './MenuArray';
 
 export default function MenuTab() {
   const [activeTab, setActiveTab] = useState(0);
@@ -27,6 +28,9 @@ export default function MenuTab() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+  const filterImagesByCategory = (category: string) => {
+    return menuArray.filter((image) => image.category === category);
+  };
   return (
     <div className={styles.MenuTabContainer}>
       <div className={styles.MenuTabCategory}>
@@ -34,13 +38,13 @@ export default function MenuTab() {
           className={activeTab === 0 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(0)}
         >
-          Tab 1
+          Alle
         </button>
         <button
           className={activeTab === 1 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(1)}
         >
-          Tab 2
+          Getränke
         </button>
         <button
           className={activeTab === 2 ? styles.MenuTabActive : styles.MenuTab}
@@ -72,11 +76,35 @@ export default function MenuTab() {
         >
           Tab 7
         </button>
+        <button
+          className={activeTab === 7 ? styles.MenuTabActive : styles.MenuTab}
+          onClick={() => setActiveTab(7)}
+        >
+          Tab 8
+        </button>
       </div>
       <div className={styles.MenuTabsContent}>
         <div
           className={
             activeTab === 0 ? styles.MenuContentActive : styles.MenuContent
+          }
+        >
+          {menuArray.map((image) => (
+            <Image
+              key={image.id}
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+              quality={85}
+              onClick={() => openModal(image.src, image.alt, 480, 480)}
+              style={{ cursor: 'pointer' }}
+            />
+          ))}
+        </div>
+        <div
+          className={
+            activeTab === 1 ? styles.MenuContentActive : styles.MenuContent
           }
         >
           <Image
@@ -101,13 +129,17 @@ export default function MenuTab() {
             }
             style={{ cursor: 'pointer' }}
           />
-        </div>
-        <div
-          className={
-            activeTab === 1 ? styles.MenuContentActive : styles.MenuContent
-          }
-        >
-          Content for Tab 2
+          <Image
+            src="/MenuImages/MenuPage4.jpg"
+            alt="Drinks Menu"
+            width={240}
+            height={240}
+            quality={85}
+            onClick={() =>
+              openModal('/MenuImages/MenuPage4.jpg', 'Drinks Menu', 480, 480)
+            }
+            style={{ cursor: 'pointer' }}
+          />
         </div>
         <div
           className={
@@ -143,6 +175,13 @@ export default function MenuTab() {
           }
         >
           Content for Tab 7
+        </div>
+        <div
+          className={
+            activeTab === 7 ? styles.MenuContentActive : styles.MenuContent
+          }
+        >
+          Content for Tab 8
         </div>
       </div>
       {isModalOpen && (
