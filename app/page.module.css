@@ -197,10 +197,9 @@
   padding: 1rem;
 }
 .SectionDescription {
-  font-size: x-large;
   width: 75%;
   line-height: 1.5;
-  font-weight: bolder;
+  font-size: large;
 }
 .DivisionDivider {
   width: 100%;

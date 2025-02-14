@@ -42,6 +42,10 @@
   align-items: center;
   width: 100%;
   height: auto;
+  background-color: bisque;
+  /*   background-image: url('/StockImagePattern.jpg');
+  background-size: contain;
+  background-position: center; */
 }
 
 .MenuTabCategory {
@@ -50,18 +54,23 @@
   gap: 1rem;
   padding: 1rem;
 }
+.MenuTabCategory button {
+  background-color: black;
+  border-radius: 12%;
+}
 
 .MenuTab {
   padding: 0.5rem 1rem;
 }
 
 .MenuTabActive {
-  color: var(--hb-red);
+  color: white;
   padding: 0.5rem 1rem;
+  background-color: red;
 }
 
 .MenuTab:hover {
-  background-color: #f0f0f0;
+  cursor: pointer;
 }
 
 .MenuTabsContent {
@@ -69,7 +78,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: var(--foreground);
+
   height: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -81,11 +90,25 @@
   height: 100%;
   background-color: white;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /*  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .MenuContentActive {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.ImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+.ImageWrapper:hover {
+  transform: scale(1.05);
+}
+.Image {
+  border-radius: 8px;
 }

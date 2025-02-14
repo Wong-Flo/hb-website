@@ -50,37 +50,43 @@ export default function MenuTab() {
           className={activeTab === 2 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(2)}
         >
-          Tab 3
+          Tagesmenü
         </button>
         <button
           className={activeTab === 3 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(3)}
         >
-          Tab 4
+          Dim-Sum
         </button>
         <button
           className={activeTab === 4 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(4)}
         >
-          Tab 5
+          Vorspeisen
         </button>
         <button
           className={activeTab === 5 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(5)}
         >
-          Tab 6
+          Hauptspeise
         </button>
         <button
           className={activeTab === 6 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(6)}
         >
-          Tab 7
+          Vegetarisch
         </button>
         <button
           className={activeTab === 7 ? styles.MenuTabActive : styles.MenuTab}
           onClick={() => setActiveTab(7)}
         >
-          Tab 8
+          Reis & Nudeln
+        </button>
+        <button
+          className={activeTab === 8 ? styles.MenuTabActive : styles.MenuTab}
+          onClick={() => setActiveTab(8)}
+        >
+          Nachspeise
         </button>
       </div>
       <div className={styles.MenuTabsContent}>
@@ -90,16 +96,18 @@ export default function MenuTab() {
           }
         >
           {menuArray.map((image) => (
-            <Image
-              key={image.id}
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-              quality={85}
-              onClick={() => openModal(image.src, image.alt, 480, 480)}
-              style={{ cursor: 'pointer' }}
-            />
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
           ))}
         </div>
         <div
@@ -107,81 +115,160 @@ export default function MenuTab() {
             activeTab === 1 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          <Image
-            src="/MenuImages/MenuPage2.jpg"
-            alt="Drinks Menu"
-            width={240}
-            height={240}
-            quality={85}
-            onClick={() =>
-              openModal('/MenuImages/MenuPage2.jpg', 'Drinks Menu', 480, 480)
-            }
-            style={{ cursor: 'pointer' }}
-          />
-          <Image
-            src="/MenuImages/MenuPage3.jpg"
-            alt="Drinks Menu"
-            width={240}
-            height={240}
-            quality={85}
-            onClick={() =>
-              openModal('/MenuImages/MenuPage3.jpg', 'Drinks Menu', 480, 480)
-            }
-            style={{ cursor: 'pointer' }}
-          />
-          <Image
-            src="/MenuImages/MenuPage4.jpg"
-            alt="Drinks Menu"
-            width={240}
-            height={240}
-            quality={85}
-            onClick={() =>
-              openModal('/MenuImages/MenuPage4.jpg', 'Drinks Menu', 480, 480)
-            }
-            style={{ cursor: 'pointer' }}
-          />
+          {filterImagesByCategory('Getränke').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
         <div
           className={
             activeTab === 2 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 3
+          {filterImagesByCategory('TagesMenü').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
         <div
           className={
             activeTab === 3 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 4
+          {filterImagesByCategory('DimSum').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
         <div
           className={
             activeTab === 4 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 5
+          {filterImagesByCategory('Vorspeisen').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
         <div
           className={
             activeTab === 5 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 6
+          {filterImagesByCategory('Hauptspeise').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
         <div
           className={
             activeTab === 6 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 7
+          {filterImagesByCategory('Vegetarisch').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
         <div
           className={
             activeTab === 7 ? styles.MenuContentActive : styles.MenuContent
           }
         >
-          Content for Tab 8
+          {filterImagesByCategory('ReisNudeln').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
+        </div>
+        <div
+          className={
+            activeTab === 8 ? styles.MenuContentActive : styles.MenuContent
+          }
+        >
+          {filterImagesByCategory('Nachspeise').map((image) => (
+            <div key={image.id} className={styles.ImageWrapper}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                quality={85}
+                onClick={() => openModal(image.src, image.alt, 480, 480)}
+                className={styles.Image}
+                style={{ cursor: 'pointer' }}
+              />{' '}
+            </div>
+          ))}
         </div>
       </div>
       {isModalOpen && (
