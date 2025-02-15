@@ -213,8 +213,7 @@
   height: 30rem;
 }
 .OpeningTimes {
-  width: 50%;
-  height: 10rem;
+  width: 35%;
   color: white;
   padding: 0.5rem;
 }
@@ -244,6 +243,11 @@
   font-style: italic;
   margin-top: 0.5rem;
   color: #555;
+}
+.Address {
+  width: 30%;
+  background-color: var(--hb-red);
+  height: 10rem;
 }
 .credit {
   font-size: 8px;

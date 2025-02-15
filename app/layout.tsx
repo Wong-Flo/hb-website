@@ -149,6 +149,7 @@ export default function RootLayout({
               *Last Order 30 minutes before closing*
             </p>
           </div>
+          <div className={styles.Address}>Mariahilfergürtel 17 | 1150 Wien</div>
         </div>
         <footer className={styles.FooterSection}>
           <Link href="/Impressum">
