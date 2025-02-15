@@ -127,9 +127,7 @@ export default function RootLayout({
             </div>
             <div className={styles.TimeRow}>
               <span className={styles.Day}>Wednesday </span>
-              <span className={styles.Closed}>
-                <u>Closed</u>
-              </span>
+              <span className={styles.Closed}>Closed</span>
             </div>
             <div className={styles.TimeRow}>
               <span className={styles.Day}>Thursday </span>
