@@ -2,14 +2,34 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import styles from '../layout.module.css';
 
 interface NavbarProps {
   titleText?: string;
+  className?: string;
 }
 export default function Navbar({ titleText }: NavbarProps) {
   const pathname = usePathname();
+  /* const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setIsNavbarVisible(false);
+      } else {
+        setIsNavbarVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
 
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]); */
   // Determine the background image based on the current route
   let backgroundImage;
   switch (pathname) {
@@ -33,6 +53,10 @@ export default function Navbar({ titleText }: NavbarProps) {
 
   return (
     <div className={styles.TitleAndNavbar} style={{ backgroundImage }}>
+      {/*   <div
+      className={`${styles.TitleAndNavbar} ${isNavbarVisible ? styles.navbarVisible : styles.navbarHidden}`}
+      style={{ backgroundImage }}
+    >  */}
       <div className={styles.LogoAndNavbar}>
         <Image
           src="/hb_logo_text_white.png"
