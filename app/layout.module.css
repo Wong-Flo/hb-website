@@ -251,9 +251,14 @@
   filter: grayscale(10%);
   -webkit-filter: grayscale(10%);
 }
-.PhoneNumber {
+.ContactSection {
   width: 30%;
   color: white;
+  text-align: center;
+  font-size: large;
+}
+.ContactSection div {
+  padding-top: 1rem;
 }
 .credit {
   font-size: 8px;

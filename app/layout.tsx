@@ -116,42 +116,42 @@ export default function RootLayout({
         <main>{children}</main>
         <div className={styles.BottomSection}>
           <div className={styles.OpeningTimes}>
-            <h2>Opening Times</h2>
+            <h2></h2>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Monday </span>
+              <span className={styles.Day}>Montag </span>
               <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
             </div>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Tuesday </span>
+              <span className={styles.Day}>Dienstag </span>
               <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
             </div>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Wednesday </span>
-              <span className={styles.Closed}>Closed</span>
+              <span className={styles.Day}>Mittwoch </span>
+              <span className={styles.Closed}>Geschlossen</span>
             </div>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Thursday </span>
+              <span className={styles.Day}>Donnerstag </span>
               <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
             </div>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Friday </span>
+              <span className={styles.Day}>Freitag </span>
               <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
             </div>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Saturday </span>
+              <span className={styles.Day}>Samstag </span>
               <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
             </div>
             <div className={styles.TimeRow}>
-              <span className={styles.Day}>Sunday </span>
+              <span className={styles.Day}>Sonntag </span>
               <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
             </div>
             <p className={styles.LastOrder}>
               *Last Order 30 minutes before closing*
             </p>
           </div>
-          <div className={styles.PhoneNumber}>
+          <div className={styles.ContactSection}>
             <h2>Kontakt</h2>
-            <div>Mariahilfergürtel 17 | 1150 Wien </div>
+            <div>Mariahilfergürtel 17 </div> <div> 1150 Wien </div>
             <div>+43-1-8934217</div>
           </div>
           <div className={styles.Address}>

@@ -6,7 +6,7 @@ import MenuTab from './MenuTab';
 export default function Menu() {
   return (
     <>
-      <Navbar titleText="This is the Menu Page" />
+      <Navbar titleText="Speisekarte" />
       <div className={styles.DivisionDivider}>
         <MenuTab />
       </div>

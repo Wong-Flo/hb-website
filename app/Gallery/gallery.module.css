@@ -1,0 +1,25 @@
+.Container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Responsive grid columns */
+  gap: 1rem; /* Space between grid items */
+  padding: 1rem; /* Padding around the container */
+}
+
+.GridItem {
+  background-color: #f0f0f0; /* Placeholder background color */
+  border: 1px solid #ccc; /* Border for grid items */
+  border-radius: 8px; /* Rounded corners */
+  height: 200px; /* Fixed height for grid items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem; /* Placeholder text size */
+  color: #999; /* Placeholder text color */
+}
+
+.GridItem:hover {
+  transform: scale(1.1);
+}

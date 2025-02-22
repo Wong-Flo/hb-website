@@ -19,12 +19,10 @@ export default function Navbar({ titleText }: NavbarProps) {
     case '/Menu':
       backgroundImage = "url('StockPic5.jpg')";
       break;
-    case '/News':
+    case '/Gallery':
       backgroundImage = "url('StockPic2.jpg')";
       break;
-    case '/FindUs':
-      backgroundImage = "url('StockPic3.jpg')";
-      break;
+
     case '/AboutUs':
       backgroundImage = "url('StockPic4.jpg')";
       break;
@@ -50,15 +48,13 @@ export default function Navbar({ titleText }: NavbarProps) {
           <Link href="/Menu" className={pathname === '/Menu' ? 'active' : ''}>
             Menü
           </Link>
-          <Link href="/News" className={pathname === '/News' ? 'active' : ''}>
-            Aktuelles
-          </Link>
           <Link
-            href="/FindUs"
-            className={pathname === '/FindUs' ? 'active' : ''}
+            href="/Gallery"
+            className={pathname === '/Gallery' ? 'active' : ''}
           >
-            Finde Uns
+            Gallery
           </Link>
+
           <Link
             href="/AboutUs"
             className={pathname === '/AboutUs' ? 'active' : ''}
