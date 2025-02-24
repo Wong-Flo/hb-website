@@ -16,6 +16,10 @@ export default function News() {
         <div className={styles.GridItem}>8</div>
         <div className={styles.GridItem}>9</div>
         <div className={styles.GridItem}>10</div>
+        <div className={styles.GridItem}>11</div>
+        <div className={styles.GridItem}>12</div>
+        <div className={styles.GridItem}>13</div>
+        <div className={styles.GridItem}>14</div>
         {/* Add more grid items as needed */}
       </div>
     </>
