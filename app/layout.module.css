@@ -222,38 +222,7 @@
   background-color: #191919;
   height: 30rem;
 }
-.OpeningTimes {
-  width: 45%;
-  color: white;
-  padding: 0.5rem;
-}
-.TimeRow {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #ddd;
-  align-items: center;
-}
 
-.Day {
-  font-weight: bold;
-  flex: 1;
-}
-.Hours {
-  text-align: right;
-  flex: 1;
-}
-.Closed {
-  color: rgba(255, 0, 0, 0.5);
-  text-align: right;
-  padding-right: 3rem;
-}
-.LastOrder {
-  text-align: center;
-  font-style: italic;
-  margin-top: 0.5rem;
-  color: #555;
-}
 .Address {
   width: 50%;
 

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Link from 'next/link';
 import styles from './layout.module.css';
+import OpeningTimes from './OpeningTimes/OpeningTimes';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,40 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <main>{children}</main>
         <div className={styles.BottomSection}>
-          <div className={styles.OpeningTimes}>
-            <h2></h2>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>Monday </span>
-              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
-            </div>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>tuesday </span>
-              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
-            </div>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>wednesday </span>
-              <span className={styles.Closed}>Geschlossen</span>
-            </div>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>thursday </span>
-              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
-            </div>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>Friday </span>
-              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
-            </div>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>Saturday </span>
-              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
-            </div>
-            <div className={styles.TimeRow}>
-              <span className={styles.Day}>Sunday </span>
-              <span className={styles.Hours}>11:30-14:30 | 17:30-21:30</span>
-            </div>
-            <p className={styles.LastOrder}>
-              *Last Order 30 minutes before closing*
-            </p>
-          </div>
+          <OpeningTimes />
           <div className={styles.ContactSection}>
             <h2>Kontakt</h2>
             <div>Mariahilfergürtel 17 </div> <div> 1150 Wien </div>
