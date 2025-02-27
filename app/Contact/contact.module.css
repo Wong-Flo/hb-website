@@ -1,0 +1,9 @@
+.ContactSection {
+  width: 30%;
+  color: white;
+  text-align: center;
+  font-size: large;
+}
+.ContactSection div {
+  padding-top: 1rem;
+}
