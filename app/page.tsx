@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Navbar from './Navbar/Navbar';
 /* <div className={styles.Subtitles}>
         It&apos;s not just food,
         <span className={styles.SubtitlesColor}> It&apos;s an experience.</span>
@@ -52,6 +51,7 @@ import Navbar from './Navbar/Navbar';
 }
  */
 import styles from './page.module.css';
+import TopBarPicture from './TopBar/TopBarPictures';
 
 /* 'use client';
 import Image from 'next/image';
@@ -146,7 +146,7 @@ export default function Home() {
 export default function Home() {
   return (
     <>
-      <Navbar titleText="Welcome to Happy Buddha" />
+      <TopBarPicture titleText="Welcome to Happy Buddha" />
       <div className={styles.DivisionDivider}>
         <Image
           src="/StockImagePattern.jpg"

@@ -1,15 +1,15 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 /* import { useEffect, useState } from 'react'; */
 import styles from '../layout.module.css';
+import NavbarMenu from './NavbarMenu';
 
 interface NavbarProps {
   titleText?: string;
   className?: string;
 }
-export default function Navbar({ titleText }: NavbarProps) {
+export default function TopBarPicture({ titleText }: NavbarProps) {
   const pathname = usePathname();
   /* const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -65,27 +65,7 @@ export default function Navbar({ titleText }: NavbarProps) {
           height={240}
           style={{ maxWidth: '100%', height: 'auto' }}
         />
-        <div className={styles.Navbar}>
-          <Link href="/" className={pathname === '/' ? 'active' : ''}>
-            Home
-          </Link>
-          <Link href="/Menu" className={pathname === '/Menu' ? 'active' : ''}>
-            Menü
-          </Link>
-          <Link
-            href="/Gallery"
-            className={pathname === '/Gallery' ? 'active' : ''}
-          >
-            Gallery
-          </Link>
-
-          <Link
-            href="/AboutUs"
-            className={pathname === '/AboutUs' ? 'active' : ''}
-          >
-            Über Uns
-          </Link>
-        </div>
+        <NavbarMenu />
       </div>
       {titleText && (
         <div className={styles.TitleText}>

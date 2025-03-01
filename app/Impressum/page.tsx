@@ -1,4 +1,4 @@
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../TopBar/TopBarPictures';
 import styles from './Impressum.module.css';
 
 export default function Impressum() {

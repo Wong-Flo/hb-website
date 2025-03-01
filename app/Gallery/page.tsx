@@ -1,4 +1,4 @@
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../TopBar/TopBarPictures';
 import styles from './gallery.module.css';
 
 export default function News() {

@@ -1,5 +1,5 @@
 /* import Image from 'next/image'; */
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../TopBar/TopBarPictures';
 import styles from './Menu.module.css';
 import MenuTab from './MenuTab';
 
