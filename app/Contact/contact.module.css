@@ -7,3 +7,10 @@
 .ContactSection div {
   padding-top: 1rem;
 }
+.LogoSection {
+  margin: 1rem;
+}
+.Icon {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
