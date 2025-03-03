@@ -1,0 +1,40 @@
+.Navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+  margin-left: auto;
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  width: auto; /* Adjust the width as needed */
+  z-index: 1000;
+  padding: 1rem; /* Optional: Add padding */
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.Navbar a {
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+  font-size: 20px;
+  color: black;
+}
+
+.Navbar a:hover {
+  color: var(--hb-red);
+  text-decoration: underline;
+}
+
+.Navbar a.active {
+  font-weight: bold;
+  color: red;
+}
+
+.navbarVisible {
+  transform: translateY(0);
+}
+
+.navbarHidden {
+  transform: translateY(-200%); /* Move the navbar out of view */
+}

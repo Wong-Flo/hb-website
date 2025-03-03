@@ -11,26 +11,7 @@ interface NavbarProps {
 }
 export default function TopBarPicture({ titleText }: NavbarProps) {
   const pathname = usePathname();
-  /* const [isNavbarVisible, setIsNavbarVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setIsNavbarVisible(false);
-      } else {
-        setIsNavbarVisible(true);
-      }
-      setLastScrollY(currentScrollY);
-    };
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]); */
-  // Determine the background image based on the current route
   let backgroundImage;
   switch (pathname) {
     case '/':
@@ -52,12 +33,8 @@ export default function TopBarPicture({ titleText }: NavbarProps) {
   }
 
   return (
-    <div className={styles.TitleAndNavbar} style={{ backgroundImage }}>
-      {/*   <div
-      className={`${styles.TitleAndNavbar} ${isNavbarVisible ? styles.navbarVisible : styles.navbarHidden}`}
-      style={{ backgroundImage }}
-    >  */}
-      <div className={styles.LogoAndNavbar}>
+    <div className={styles.HeaderSection} style={{ backgroundImage }}>
+      <div className={styles.HbLogo}>
         <Image
           src="/hb_logo_text_white.png"
           alt="Happy Buddha Logo"
