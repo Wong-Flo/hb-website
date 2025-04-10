@@ -157,7 +157,7 @@ export default function Home() {
       <div className={styles.SectionContainer}>
         <div className={styles.SectionLeft}>
           <h1 className={styles.SectionTitle}>Dim-Sum</h1>
-          {/*   <div className={styles.SectionDescription}>
+          <div className={styles.SectionDescription}>
             The Story of Dim-Sum, is a centuries-old culinary tradition that
             originated in China’s Guangdong province. Initially created as small
             snacks to accompany tea for weary travelers, Dim-Sum evolved into a
@@ -167,7 +167,7 @@ export default function Home() {
             bite-sized dishes. Today, dim sum is celebrated worldwide, from
             bustling tea houses in Hong Kong to modern restaurants across the
             globe.
-          </div> */}
+          </div>
         </div>
         <div className={styles.SectionRight}>
           <Image
