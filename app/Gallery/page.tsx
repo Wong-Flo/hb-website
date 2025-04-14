@@ -4,7 +4,7 @@ import styles from './gallery.module.css';
 export default function News() {
   return (
     <>
-     { <Navbar titleText="Unsere Gallery" />
+      <Navbar titleText="Unsere Gallery" />
       <div className={styles.Container}>
         <div className={styles.GridItem}>1</div>
         <div className={styles.GridItem}>2</div>
@@ -21,7 +21,7 @@ export default function News() {
         <div className={styles.GridItem}>13</div>
         <div className={styles.GridItem}>14</div>
         {/* Add more grid items as needed */}
-      </div>}
+      </div>
     </>
   );
 }

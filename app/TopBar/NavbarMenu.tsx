@@ -39,9 +39,9 @@ export default function NavbarMenu() {
       <Link href="/Gallery" className={pathname === '/Gallery' ? 'active' : ''}>
         Gallery
       </Link>
-      <Link href="/AboutUs" className={pathname === '/AboutUs' ? 'active' : ''}>
+      {/* <Link href="/AboutUs" className={pathname === '/AboutUs' ? 'active' : ''}>
         Über Uns
-      </Link>
+      </Link> */}
     </div>
   );
 }
