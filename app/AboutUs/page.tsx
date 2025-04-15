@@ -1,7 +1,7 @@
 import Navbar from '../TopBar/TopBarPictures';
 import styles from './aboutus.module.css';
 
-export default function AboutUs() {
+export default function ÜberUns() {
   return (
     <>
       <Navbar titleText="Unsere Geschichte" />
