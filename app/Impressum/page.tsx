@@ -5,7 +5,7 @@ export default function Impressum() {
   return (
     <>
       <Navbar titleText="Impressum" />
-      <div className={styles.ImpressumContainer}>
+      {/* <div className={styles.ImpressumContainer}>
         <h3>Gem. §14 UGB und § 5 E-Commerce-Gesetz:</h3>
         <strong>Firmenname:</strong> W57 Gesellschaft m.b.H
         <br />
@@ -17,7 +17,7 @@ export default function Impressum() {
         <br />
         <strong>Firmenbuchnummer:</strong> FN 386694V <br />
         <strong>Firmenbuchgericht:</strong> Handelsgericht Wien <br />
-      </div>
+      </div> */}
     </>
   );
 }
